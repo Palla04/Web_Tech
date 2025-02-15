@@ -1,34 +1,31 @@
 <!DOCTYPE html>
 <html>
-<style>
-table, th, td {
-  border:1px solid black;
-}
-</style>
-<body>
+   <head>
+      <title>HTML Table</title>
+   </head>
+   <body>
+      <table border = "1" width = "100%">
+        <thead>
+          <tr>
+             <td colspan = "4">This is the head of the table</td>
+          </tr>
+        </thead>
 
-<h2>A basic HTML table</h2>
+        <tfoot>
+          <tr>
+            <td colspan = "4">This is the foot of the table</td>
+          </tr>
+        </tfoot>
 
-<table style="width:100%">
-  <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th>
-  </tr>
-  <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-  </tr>
-  <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <!-- <td>Mexico</td> -->
-  </tr>
-</table>
+        <tbody>
+          <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+            <td>Cell 3</td>
+            <td>Cell 4</td>
+          </tr>
+        </tbody>
 
-<p>To understand the example better, we have added borders to the table.</p>
-
-</body>
+      </table>
+   </body>
 </html>
-
