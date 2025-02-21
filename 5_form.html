@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #all-over table{
+            width: 90%;
+            display: flex;
+            justify-content: center;
+        }
+        table,td,th{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td {
+            text-align: center; /* Centers text horizontally */
+            padding: 10px; /* Adds some spacing inside the cells */
+        }
+        form{
+            border: 1px solid black;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="background-color: yellow; border-radius: 5%; display:flex; justify-content: center;">This is HTML Assignment 5</h2>
+    <table id="all-over">
+        <tr>
+            <td>function <br>
+                testFunction( strText ){ <br>
+                alert (strText) <br>
+                }
+            </td>
+            <td><img src="Taj_Mahal.jpg" style="height: 150px; width: 200px;" alt="Image"></td>
+            <td>1. Link to open <a href="https://www.dmc.ac.in" target="_blank" style="color: blue; text-decoration: underline;">www.dmc.ac.in</a> in a new tab
+            <br>2. Link to open <a href="https://snuniv.ac.in" target="_self" style="color: blue; text-decoration: underline;">https://snuniv.ac.in/</a> in the same window</td>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li type="dise">(A+B)<sup>2</sup>=A<sup>2</sup>+2AB+b<sup>2</sup></li>
+                    <li type="dise">H<sub>2</sub>=H<sub>2</sub>+2O<sub>2</sub></li>
+                    <li><b>THIS IS A <span style="color: red;">C</span><span style="color: red;">O</span><span style="color: rgb(94, 94, 236);">L</span><span style="color: rgb(94, 94, 236);">O</span><span style="color: rgb(3, 3, 85);">R</span><span style="color: rgb(3, 3, 85);">F</span><span style="color: orange;">U</span><span style="color: orange;">L</span>
+                        TEXT</b></li>
+                    <li>THIS IS <del>OUT</del> AIND THIS IS
+                        <ins>IN</ins></li>
+                    <li><mark>THIS IS MARKED</mark></li>
+                    <li>“INDIA is Great”</li>
+                </ul>
+            </td>
+            <td>
+                <table style="border: 0; width: 100%;">
+                    <tr>
+                        <th colspan="2">Fruits</th>
+                    </tr>
+                    <tr>
+                        <th>Name</th>
+                        <th>Color</th>
+                    </tr>
+                    <tr>
+                        <td>Mango</td>
+                        <td>Yellow</td>
+                    </tr>
+                    <tr>
+                        <td>Cherry</td>
+                        <td>Red</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Flower</th>
+                    </tr>
+                    <tr>
+                        <td>Sunflower</td>
+                        <td>Yellow</td>
+                    </tr>
+                    <tr>
+                        <td>Rose</td>
+                        <td>Red</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <form action="">
+                    <label for="id">User ID: </label>
+                    <input type="text">
+                    <br><br>
+                    <label for="pass">Password: </label>
+                    <input type="password">
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <form action="">
+                    <input type="checkbox" id="math">
+                    <label for="math">Maths</label>
+                    <input type="checkbox" id="phy">
+                    <label for="phy">Physics</label>
+                </form>
+            </td>
+            <td>
+                <form action="">
+                    <input type="radio">
+                    <label for="">Math</label>
+                    <input type="radio">
+                    <label for="">Physics</label>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <form action="">
+                    <input style="background-color: rgb(219, 215, 215);" list="Subject" value="">
+                    <datalist id="Subject">
+                        <option value="Math">
+                        <option value="Physics">
+                        <option value="Web Tech">
+                    </datalist>
+                </form>
+            </td>
+            <td>
+                <button type="submit"><span style="text-decoration: underline;">S</span>ubmit</button>
+                <button type="submit"><span style="text-decoration: underline;">R</span>eset</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <h1>The iframe element</h1>
+                <iframe src="https://en.wikipedia.org/wiki/HTML"
+                 width="100%" height="200" style="border: 2px solid black;">
+                </iframe>
+
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
