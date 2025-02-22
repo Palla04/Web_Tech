@@ -11,10 +11,11 @@
             justify-content: center;
             align-items: center;
         }
-        #all-over table{
-            width: 90%;
+        table{
+            
             display: flex;
             justify-content: center;
+            background-color: bisque;
         }
         table,td,th{
             border: 1px solid black;
@@ -28,6 +29,10 @@
             border: 1px solid black;
             padding: 5px;
         }
+        #small-table tr{
+            background-color: rgb(246, 62, 209);
+            color: rgb(30, 53, 166);
+        }
     </style>
 </head>
 <body>
@@ -39,7 +44,7 @@
                 alert (strText) <br>
                 }
             </td>
-            <td><img src="Taj_Mahal.jpg" style="height: 150px; width: 200px;" alt="Image"></td>
+            <td><img src="Taj_Mahal.jpg" style="height: 150px; width: 200px; border:5px solid blue; border-radius: 50%;" alt="Image"></td>
             <td>1. Link to open <a href="https://www.dmc.ac.in" target="_blank" style="color: blue; text-decoration: underline;">www.dmc.ac.in</a> in a new tab
             <br>2. Link to open <a href="https://snuniv.ac.in" target="_self" style="color: blue; text-decoration: underline;">https://snuniv.ac.in/</a> in the same window</td>
         </tr>
@@ -57,7 +62,7 @@
                 </ul>
             </td>
             <td>
-                <table style="border: 0; width: 100%;">
+                <table style="border: 0; width: 100%; height: 100%; " id="small-table">
                     <tr>
                         <th colspan="2">Fruits</th>
                     </tr>
@@ -87,7 +92,7 @@
                 </table>
             </td>
             <td>
-                <form action="">
+                <form action="" style="background-color: rgb(244, 159, 49);">
                     <label for="id">User ID: </label>
                     <input type="text">
                     <br><br>
@@ -98,7 +103,7 @@
         </tr>
         <tr>
             <td colspan="2">
-                <form action="">
+                <form action="" style="background-color: rgb(244, 159, 49);">
                     <input type="checkbox" id="math">
                     <label for="math">Maths</label>
                     <input type="checkbox" id="phy">
@@ -106,7 +111,7 @@
                 </form>
             </td>
             <td>
-                <form action="">
+                <form action="" style="background-color: rgb(244, 159, 49);">
                     <input type="radio">
                     <label for="">Math</label>
                     <input type="radio">
@@ -116,23 +121,23 @@
         </tr>
         <tr>
             <td colspan="2">
-                <form action="">
-                    <input style="background-color: rgb(219, 215, 215);" list="Subject" value="">
-                    <datalist id="Subject">
-                        <option value="Math">
-                        <option value="Physics">
-                        <option value="Web Tech">
-                    </datalist>
+                <form action="" style="background-color: rgb(244, 159, 49);">
+                    <select style="background-color: rgb(219, 215, 215);">
+                        <option value=""></option>
+                        <option value="Math">Math</option>
+                        <option value="Physics">Physics</option>
+                        <option value="Web Tech">Web Tech</option>
+                    </select>
                 </form>
             </td>
             <td>
-                <button type="submit"><span style="text-decoration: underline;">S</span>ubmit</button>
-                <button type="submit"><span style="text-decoration: underline;">R</span>eset</button>
+                <button type="submit" style="background-color: rgb(244, 159, 49);"><span style="text-decoration: underline;">S</span>ubmit</button>
+                <button type="submit" style="background-color: rgb(244, 159, 49);"><span style="text-decoration: underline;">R</span>eset</button>
             </td>
         </tr>
         <tr>
             <td colspan="3">
-                <h1>The iframe element</h1>
+                <h1 style="background-color: rgb(20, 123, 100);">The iframe element</h1>
                 <iframe src="https://en.wikipedia.org/wiki/HTML"
                  width="100%" height="200" style="border: 2px solid black;">
                 </iframe>
